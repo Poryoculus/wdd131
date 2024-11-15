@@ -13,6 +13,7 @@ header {
 header h1 {
     font-family: "Roboto", sans-serif;
     color: #717a77;
+    text-align: center;
 }
 nav {
     display: flex;
@@ -95,12 +96,16 @@ footer {
 
 }
 
+
+
 .me img {
     display: block;
     float: right;
     padding: 5px ;
     margin: 10px;
     border: 1px solid ;
+    height: 200px ;
+    width: 150px;
 }
 
 .country {
@@ -113,7 +118,8 @@ footer {
     display: block;
     float: left;
     padding: 10px;
-
+    height: 100px ;
+    width: 150px;
 }
 
 figure { 
