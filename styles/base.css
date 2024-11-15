@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
 
 header {
     background-color: #fff;
     
 }
 header h1 {
-    font-style: "monospace", sans-serif ;
+    font-family: "Roboto", sans-serif;
     color: #717a77;
 }
 nav {
@@ -57,6 +64,7 @@ main {
 section {
     background-color: white;
     box-shadow: 6px 3px 4px gray;
+    font-family: "Roboto", sans-serif;
 }
 section .box-header{
     
