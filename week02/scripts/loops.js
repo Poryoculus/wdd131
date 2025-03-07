@@ -28,5 +28,3 @@ myInfo = {
   }
   myInfo.favoriteFoods.forEach(createAndAppendFoodItem);
   } 
-  
-

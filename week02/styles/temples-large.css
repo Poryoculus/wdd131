@@ -1,0 +1,33 @@
+@media screen and (min-width: 32rem) {
+    header { background-color: #F5EE9E;
+            color: black;}
+    h2 { 
+        display: block;
+        position: center;
+
+    }
+    .gridplace { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;}
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #menu {
+		display: none;
+	}
+    
+    .navigation li {
+        display: block;
+    }
+
+    nav li:hover {
+        text-decoration: overline wavy;
+        background-color: white;
+        color: #AB3428;
+    }
+    
+}
