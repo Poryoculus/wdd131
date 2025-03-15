@@ -100,3 +100,12 @@ img {
 .show li {
 	display: block;
 }
+
+footer {
+    background-color: #F5EE9E;
+
+}
+
+footer p {
+    text-align: center;
+}
