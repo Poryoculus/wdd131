@@ -9,18 +9,45 @@
     />
     <meta name="author" content="Rodrigo Pacheco || WDD131" />
     <title>Country Page</title>
-    <link href="style/place.css" rel="stylesheet" />
-    <script src="script/place.js" defer></script>
+    <link href="styles/place.css" rel="stylesheet" />
+    <script src="scripts/place.js" defer></script>
   </head>
   <body>
     <header>
       <div>
-        <h1>Puerto Natales</h1>
-      </div>
+        <h1>Chile</h1>
+      </div
     </header>
     <main>
-      <img srcset="" alt="" />
+
+      <section>
+        
+        <source srcset="week03/images/small-media-puerto.webp" media="(max-width: 360px) ">
+        <img src="week03/images/large-media-puerto.webp" alt="Chile Hero">
+      </section>
+        <section class="data-box">
+          <h2>Data</h2>
+          <p><strong>Area: </strong>756 102 sq KM </p>
+          <p><strong>Population: </strong>20.086.384 hab</p>
+          <p><strong>Capital: </strong>Santiago</p>
+          <p><strong>Languages: </strong>Español</p>
+          <p><strong>Currency: </strong>Peso CLP</p>
+          <p><strong>Time Zone: </strong>UTC-03</p>
+          <p><strong>Calling Code: </strong>+56</p>
+          <p><strong>Internet TLD: </strong>.cl</p>
+        </section>
+      <section class="weather">
+        <h2>Weather</h2>
+<img id="weatherIcon" src="week03/images/weather.svg" alt="weather icon" />
+        <p><strong>Temperature: </strong></p>
+        <p><strong>Condition: </strong></p>
+        <p><strong>Wind: </strong></p>
+        <p><strong>Wind Chill: </strong></p>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>©<span id="currentyear"></span> | Rodrigo Pacheco | Chile  </p>
+        <p id="lastModified"><span></span></p>
+    </footer>
   </body>
 </html>

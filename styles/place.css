@@ -1,0 +1,59 @@
+:root {
+<<<<<<< HEAD
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+=======
+  --primary-color: #0039A6;  /* Azul de la bandera de Chile */
+  --secondary-color: #D52B1E;  /* Rojo de la bandera de Chile */
+>>>>>>> Snippet
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+}
+
+
+header {
+background-color: var(--primary-color);
+  text-align: center;
+}
+.data-box {
+  background-color: var(--light-color);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#weatherIcon {
+  width: 100px;
+}
+
+.weather {
+background-color: var(--light-color);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 800px; /* Adjust this to your needs */
+  margin: 0 auto; /* Center the image */
+}
+
+/* Apply different styles for smaller screens */
+@media (max-width: 360px) {
+  img {
+    max-width: 100%; /* Make sure it fits within smaller screens */
+    height: auto;
+  }
+}
+
+
