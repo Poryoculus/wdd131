@@ -1,11 +1,6 @@
 :root {
-<<<<<<< HEAD
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-=======
-  --primary-color: #0039A6;  /* Azul de la bandera de Chile */
-  --secondary-color: #D52B1E;  /* Rojo de la bandera de Chile */
->>>>>>> Snippet
+  --primary-color: #0039a6; /* Blue for the Chilean's flag*/
+  --secondary-color: #A8211F;/* Red for the Chilean's flag*/
   --success-color: #28a745;
   --info-color: #17a2b8;
   --warning-color: #ffc107;
@@ -13,47 +8,169 @@
   --light-color: #f8f9fa;
   --dark-color: #343a40;
 }
+html {
+  background-color: var(--primary-color);
+}
 
+body {
+  margin: 0;
+}
 
-header {
-background-color: var(--primary-color);
+header h1 {
+  color: var(--light-color);
   text-align: center;
+  border-radius: 5px;
+  margin: 5px;
 }
 .data-box {
   background-color: var(--light-color);
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: solid 2px var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+  position: absolute;
+  width: 200px;
+  left: 2%;
+  top: 7%;
+  opacity: 0.85;
 }
 
+.data-box h2 {
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+  padding: 10px;
+  position: relative;
+  left: 24px;
+  top: -8px;
+
+  border-radius: 5px;
+}
 #weatherIcon {
-  width: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .weather {
-background-color: var(--light-color);
+  background-color: var(--light-color);
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: solid 2px var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+  position: absolute;
+  width: 300px;
+  left: 76%;
+  top: 55%;
+  opacity: 0.85;
 }
 
-
-img {
+.weather-wrapper {
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+  padding: 10px;
+  position: relative;
+  left: -35px;
+  top: -2;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.hero img {
   width: 100%;
-  height: auto;
+  height: 85%;
+  position: absolute;
+  object-fit: cover;
+  aspect-ratio: auto;
+  border-top: solid 1px var(--light-color);
+
+  border-bottom: solid 1px var(--light-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  text-align: center;
   display: block;
-  max-width: 800px; /* Adjust this to your needs */
-  margin: 0 auto; /* Center the image */
+
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 /* Apply different styles for smaller screens */
 @media (max-width: 360px) {
-  img {
-    max-width: 100%; /* Make sure it fits within smaller screens */
+  .data-box {
+    background-color: var(--light-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: solid 2px var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
+    position: static;
+    width: auto;
     height: auto;
+    text-align: center;
+  }
+
+  .data-box h2 {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    padding: 10px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  #weatherIcon {
+    width: 80px;
+  }
+  .weather {
+    background-color: var(--light-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: solid 2px var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
+    position: static;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .weather-wrapper {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
+    color: color: var(--dark-color);
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    gap: 10px;
+    flex: 1;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+    position: static;
+    object-fit: cover;
+    aspect-ratio: auto;
+    border: solid 2px var(--light-color);
+    border-radius: 5px;
+  }
+
+  footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-align: center;
+    display: block;
+
+    position: static;
+    width: 100%;
+    bottom: auto;
   }
 }
-
-

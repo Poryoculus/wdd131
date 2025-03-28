@@ -1,0 +1,117 @@
+:root {
+  --primary-color: #0039a6; /* Blue for the Chilean's flag*/
+  --secondary-color: #d52b1e; /* Red for the Chilean's flag*/
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+}
+html {
+  background-color: var(--primary-color);
+}
+header h1 {
+  color: var(--light-color);
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px;
+}
+content-responsive {
+  max-width: 80%;
+}
+.data-box {
+  background-color: var(--light-color);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: solid 2px var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+  position: absolute;
+  left: 2%;
+  top: 7%;
+}
+#weatherIcon {
+  width: 80px;
+}
+
+.weather {
+  background-color: var(--light-color);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: solid 2px var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+  position: absolute;
+  width: 300px;  
+  left: 76%;
+  top: 55%;
+} 
+.weather-wrapper {
+  display:flex;
+  justify-content: center;
+  align-items: left;
+  gap: 10px;
+
+}
+.hero img { 
+  max-width: 100%;
+
+  height: auto;
+  position: absolute;
+  border: solid 1px var(--secondary-color);
+}
+
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  border-top: solid 2px var(--secondary-color);
+  display:block;
+}
+
+/* Apply different styles for smaller screens */
+@media (max-width: 360px) {
+  .hero img {
+    max-width: 100%; /* Make sure it fits within smaller screens */
+    height: auto;
+  }
+
+  .data-box {
+    background-color: var(--light-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: solid 2px var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
+  }
+
+  #weatherIcon {
+    width: 100px;
+  }
+
+  .weather {
+    background-color: var(--light-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: solid 2px var(--secondary-color);
+   box-shadow: 0 0 5px var(--secondary-color);
+    margin-left: 10px;
+  }
+.hero img {
+    position: block;
+    width:100% 
+  }
+.hero img {
+  width: 100%;
+  height: auto;
+  max-width: 800px; /* Adjust this to your needs */
+  margin: 0 auto; /* Center the image */
+  border-radius: 5px;
+  position: block;
+  border: solid 1px var(--secondary-color);
+}
