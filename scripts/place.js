@@ -11,7 +11,7 @@ lastModified.innerHTML = `Last modification: <span class="highlight"> ${lastmodi
 const winchillpara = document.querySelector("#windchill");
 
 // You need to extract actual values for temperature and wind speed
-const temperature = 53; // Example value for temperature
+const temperature = 47; // Example value for temperature
 const windspeed = 6; // Example value for windspeed
 const condition = "Cloudy"; // Example value for condition
 
@@ -47,7 +47,7 @@ function calculateWindChill(temp, windSpeed, unit = "F") {
     winchillpara.innerHTML = `<strong>Wind Chill: </strong>${Math.round(windChill)}°${unit}`;
   } else {
     // If conditions are not met, display "N/A"
-    winchillpara.textContent = "Wind Chill: N/A";
+    winchillpara.innerHTML = "<strong>Wind Chill: </strong> N/A";
   }
 }
 
