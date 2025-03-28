@@ -1,6 +1,6 @@
 :root {
   --primary-color: #0039a6; /* Blue for the Chilean's flag*/
-  --secondary-color: #A8211F;/* Red for the Chilean's flag*/
+  --secondary-color: #a8211f; /* Red for the Chilean's flag*/
   --success-color: #28a745;
   --info-color: #17a2b8;
   --warning-color: #ffc107;
@@ -71,7 +71,6 @@ header h1 {
   padding: 10px;
   position: relative;
   left: -35px;
-  top: -2;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -146,7 +145,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--light-color);
-    color: color: var(--dark-color);
+    color: var(--dark-color);
     left: 0px;
     top: 0px;
     text-align: center;
