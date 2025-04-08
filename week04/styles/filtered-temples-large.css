@@ -3,10 +3,12 @@
     background-color: #f5ee9e;
     color: black;
   }
-  h2 {
+  #hometitle { 
     display: block;
-    text-align: center;
-  }
+  text-align: center;
+  font-family: "Roboto", sans-serif
+}
+  
   .gridplace {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
