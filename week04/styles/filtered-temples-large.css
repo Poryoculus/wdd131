@@ -1,33 +1,33 @@
 @media screen and (min-width: 32rem) {
-    header { background-color: #F5EE9E;
-            color: black;}
-    h2 { 
-        display: block;
-        text-align: center;
+  header {
+    background-color: #f5ee9e;
+    color: black;
+  }
+  h2 {
+    display: block;
+    text-align: center;
+  }
+  .gridplace {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-    }
-    .gridplace { 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;}
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  #menu {
+    display: none;
+  }
 
-    #menu {
-		display: none;
-	}
-    
-    .navigation li {
-        display: block;
-    }
+  .navigation {
+    display: flex;
+  }
 
-    nav li:hover {
-        text-decoration: overline wavy;
-        background-color: white;
-        color: #AB3428;
-    }
-    
+  nav a:hover {
+    background-color: white;
+    color: #ab3428;
+  }
 }
