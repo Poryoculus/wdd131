@@ -1,3 +1,14 @@
+.roboto-<uniquifier > {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+html {
+  margin: 0;
+}
 header {
   background-color: #f5ee9e;
   width: 100%;
@@ -37,24 +48,24 @@ main home h2 {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 2rem auto 0 auto;
 }
 
 img {
-  width: 260px;
-  height: 320px;
+  width: 300px;
+  height: 250px;
 }
 
 #container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 10px;
   place-items: center;
 }
 
 section {
-  width: 300px;
+  width: 400px;
   align-items: center;
   text-align: center;
   border: 1px solid #f5ee9e;
