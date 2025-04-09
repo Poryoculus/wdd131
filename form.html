@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Page</title>
+    <meta name="author" content="Rodrigo Pacheco" />
+    <meta name="description" content="a Formulary page for wdd 131" />
+
+    <link rel="stylesheet" href="week05/styles/form-media-query.css" />
+    <link rel="stylesheet" href="week05/styles/form-small-query.css" />
+    <script src="week05/scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="title">
+        <a id="menu" href="#" aria-label="Open menu" onclick="myFunction()"></a>
+      </div>
+      <div class="navigation">
+        <a href="#">Home </a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="#">Discover</a>
+      </div>
+    </header>
+    <main>
+      <h1>Join Page</h1>
+      <h2>Join the Chamber</h2>
+      <form action="thanksyou.html" method="get" class="form-example">
+        <label for="first-name">
+          First Name:
+          <input
+            type="text"
+            id="first-name"
+            name="first_name"
+            required
+            title="Enter your first name"
+            autocomplete="given-name"
+          />
+        </label>
+
+        <label for="last-name">
+          Last Name:
+          <input
+            type="text"
+            id="last-name"
+            name="last_name"
+            required
+            title="Enter your last name"
+            autocomplete="family-name"
+          />
+        </label>
+
+        <label for="organization-title">
+          Organizational Title:
+          <input
+            type="text"
+            id="organization-title"
+            name="organization_title"
+            required
+            title="Enter your title (e.g., Manager, Director)"
+            autocomplete="organization-title"
+            pattern="^[A-Za-z\s-]{7,}$"
+          />
+        </label>
+
+        <label for="email">
+          Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            title="Enter a valid email address"
+            autocomplete="email"
+            placeholder="example@domain.com"
+          />
+        </label>
+
+        <label for="phone">
+          Mobile Phone Number:
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            title="Enter your mobile phone number"
+            autocomplete="tel"
+          />
+        </label>
+
+        <label for="organization">
+          Business/Organization Name:
+          <input
+            type="text"
+            id="organization"
+            name="organization"
+            required
+            title="Enter your organization's name"
+            autocomplete="organization"
+          />
+        </label>
+
+        <label for="membership-level">
+          Membership Level:
+          <select
+            id="membership-level"
+            name="membership_level"
+            required
+            title="Select a membership level"
+          >
+            <option value="" disabled selected>
+              Select a membership level
+            </option>
+            <option value="np">NP Membership (Non-Profit, No Fee)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label for="description">
+          Business/Organization Description:
+          <textarea
+            id="description"
+            name="description"
+            required
+            title="Describe your business or organization"
+          ></textarea>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp" value="" />
+
+        <button id="join" type="submit">Join</button>
+      </form>
+
+      <nav class="membership-levels">
+        <div id="np">
+          <h2>Non-Profit Membership</h2>
+          <button type="button">Learn More</button>
+        </div>
+        <div id="bronze">
+          <h2>Bronze Membership</h2>
+          <button type="button">Learn More</button>
+        </div>
+        <div id="silver">
+          <h2>Silver Membership</h2>
+          <button type="button">Learn More</button>
+        </div>
+        <div id="gold">
+          <h2>Gold Membership</h2>
+          <button type="button">Learn More</button>
+        </div>
+
+        <dialog id="membership-info"></dialog>
+      </nav>
+    </main>
+    <footer>
+      <div>
+        <h3>Tokyo Chamber of Commerce</h3>
+        <p>10 Rue de la paix</p>
+        <p>Tokyo, Mali 999</p>
+        <p>info@Tokyo.org</p>
+        <p>(223) 555-2300</p>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img src="images/youtube.png" alt="Youtube" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img src="images/twitter_copy.png" alt="Twitter" />
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+          <img src="images/linkedin.png" alt="Linkedin" />
+        </a>
+      </div>
+
+      <div>
+        <p>WDD231 Class Project</p>
+        <p>Rodrigo Pacheco</p>
+        <p>©<span id="currentYear"></span></p>
+        <p id="lastModification"></p>
+      </div>
+    </footer>
+  </body>
+</html>
