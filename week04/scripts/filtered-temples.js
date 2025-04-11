@@ -1,12 +1,10 @@
 const year = document.querySelector("#currentyear");
-
 const today = new Date();
-
 year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 
-let lastModified = document.querySelector("#lastModified");
-let lastmodification = new Date(document.lastModified);
-lastModified.textContent = `${lastmodification}`;
+const lastModified = document.querySelector("#lastModified");
+const lastmodification = new Date(document.lastModified);
+lastModified.innerHTML = `Last modification: <span class="highlight">${lastmodification.toLocaleString()}</span>`;
 
 const mainnav = document.querySelector(".navigation");
 const hambutton = document.querySelector("#menu");

@@ -1,10 +1,11 @@
-const year = document.querySelector("#currentYear");
+const year = document.querySelector("#currentyear");
 const today = new Date();
 year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 
-// Display last modification date
-const lastModified = document.querySelector("#lastModification");
-lastModified.textContent = `${new Date(document.lastModified)}`;
+const lastModified = document.querySelector("#lastModified");
+const lastmodification = new Date(document.lastModified);
+lastModified.innerHTML = `Last modification: <span class="highlight">${lastmodification.toLocaleString()}</span>`;
+
 // products json
 const products = [
   {
