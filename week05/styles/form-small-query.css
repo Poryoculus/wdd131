@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  body,
+  button,
+  footer {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}

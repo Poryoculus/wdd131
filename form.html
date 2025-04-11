@@ -19,171 +19,144 @@
   </head>
 
   <body>
-    <header>
-      <div class="title">
-        <a id="menu" href="#" aria-label="Open menu" onclick="myFunction()"></a>
-      </div>
-      <div class="navigation">
-        <a href="#">Home </a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html">Join</a>
-        <a href="#">Discover</a>
-      </div>
-    </header>
+    <header></header>
     <main>
       <h1>Join Page</h1>
       <h2>Join the Chamber</h2>
-      <form action="thanksyou.html" method="get" class="form-example">
-        <label for="first-name">
-          First Name:
+
+      <form action="review.html" method="get" class="form-example">
+        <label for="product-name">Product Name:</label>
+        <select
+          id="product-name"
+          name="product_name"
+          required
+          title="Select a product"
+        >
+          <option value="" disabled selected>Choose a Product</option>
+        </select>
+
+        <label for="stars">Rating:</label>
+        <div class="stars">
+          <label for="onestar">
+            ★
+            <br />
+            <input type="radio" id="onestar" name="stars" value="1" required />
+          </label>
+
+          <label for="twostar">
+            ★★
+            <br />
+            <input type="radio" id="twostar" name="stars" value="2" required />
+          </label>
+
+          <label for="threestar">
+            ★★★
+            <br />
+            <input
+              type="radio"
+              id="threestar"
+              name="stars"
+              value="3"
+              required
+            />
+          </label>
+
+          <label for="fourstar">
+            ★★★★
+            <br />
+            <input type="radio" id="fourstar" name="stars" value="4" required />
+          </label>
+
+          <label for="fivestar">
+            ★★★★★
+            <br />
+            <input type="radio" id="fivestar" name="stars" value="5" required />
+          </label>
+        </div>
+
+        <label for="date-of-installation">
+          Date of Installation:
           <input
-            type="text"
-            id="first-name"
-            name="first_name"
+            type="date"
+            id="date-of-installation"
+            name="date_of_installation"
             required
-            title="Enter your first name"
-            autocomplete="given-name"
+            title="Enter the date of installation"
           />
         </label>
 
-        <label for="last-name">
-          Last Name:
-          <input
-            type="text"
-            id="last-name"
-            name="last_name"
-            required
-            title="Enter your last name"
-            autocomplete="family-name"
-          />
-        </label>
+        <fieldset>
+          <legend>Useful Features:</legend>
+          <div class="checkbox-group">
+            <label class="checkbox-item" for="durability">
+              <input
+                type="checkbox"
+                id="durability"
+                name="useful_features"
+                value="durability"
+                title="Durability"
+              />
+              Durability
+            </label>
 
-        <label for="organization-title">
-          Organizational Title:
-          <input
-            type="text"
-            id="organization-title"
-            name="organization_title"
-            required
-            title="Enter your title (e.g., Manager, Director)"
-            autocomplete="organization-title"
-            pattern="^[A-Za-z\s-]{7,}$"
-          />
-        </label>
+            <label class="checkbox-item" for="ease-of-use">
+              <input
+                type="checkbox"
+                id="ease-of-use"
+                name="useful_features"
+                value="ease_of_use"
+                title="Ease of Use"
+              />
+              Ease of Use
+            </label>
 
-        <label for="email">
-          Email:
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            title="Enter a valid email address"
-            autocomplete="email"
-            placeholder="example@domain.com"
-          />
-        </label>
+            <label class="checkbox-item" for="performance">
+              <input
+                type="checkbox"
+                id="performance"
+                name="useful_features"
+                value="performance"
+                title="Performance"
+              />
+              Performance
+            </label>
 
-        <label for="phone">
-          Mobile Phone Number:
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            required
-            title="Enter your mobile phone number"
-            autocomplete="tel"
-          />
-        </label>
-
-        <label for="organization">
-          Business/Organization Name:
-          <input
-            type="text"
-            id="organization"
-            name="organization"
-            required
-            title="Enter your organization's name"
-            autocomplete="organization"
-          />
-        </label>
-
-        <label for="membership-level">
-          Membership Level:
-          <select
-            id="membership-level"
-            name="membership_level"
-            required
-            title="Select a membership level"
-          >
-            <option value="" disabled selected>
-              Select a membership level
-            </option>
-            <option value="np">NP Membership (Non-Profit, No Fee)</option>
-            <option value="bronze">Bronze Membership</option>
-            <option value="silver">Silver Membership</option>
-            <option value="gold">Gold Membership</option>
-          </select>
-        </label>
-
-        <label for="description">
-          Business/Organization Description:
+            <label class="checkbox-item" for="design">
+              <input
+                type="checkbox"
+                id="design"
+                name="useful_features"
+                value="design"
+                title="Design"
+              />
+              Design
+            </label>
+          </div>
+        </fieldset>
+        <label for="review">
+          Written review (optional):
           <textarea
-            id="description"
-            name="description"
-            required
-            title="Describe your business or organization"
+            id="review"
+            name="review"
+            title="Write your review here"
           ></textarea>
         </label>
 
-        <input type="hidden" id="timestamp" name="timestamp" value="" />
+        <label for="name">
+          Name (optional):
+          <input
+            type="text"
+            id="name"
+            name="name"
+            title="Enter your name (optional)"
+          />
+        </label>
 
-        <button id="join" type="submit">Join</button>
+        <button id="submit" type="submit">Post Review</button>
       </form>
-
-      <nav class="membership-levels">
-        <div id="np">
-          <h2>Non-Profit Membership</h2>
-          <button type="button">Learn More</button>
-        </div>
-        <div id="bronze">
-          <h2>Bronze Membership</h2>
-          <button type="button">Learn More</button>
-        </div>
-        <div id="silver">
-          <h2>Silver Membership</h2>
-          <button type="button">Learn More</button>
-        </div>
-        <div id="gold">
-          <h2>Gold Membership</h2>
-          <button type="button">Learn More</button>
-        </div>
-
-        <dialog id="membership-info"></dialog>
-      </nav>
     </main>
     <footer>
       <div>
-        <h3>Tokyo Chamber of Commerce</h3>
-        <p>10 Rue de la paix</p>
-        <p>Tokyo, Mali 999</p>
-        <p>info@Tokyo.org</p>
-        <p>(223) 555-2300</p>
-      </div>
-      <div>
-        <a href="https://www.youtube.com/" target="_blank">
-          <img src="images/youtube.png" alt="Youtube" />
-        </a>
-        <a href="https://twitter.com/" target="_blank">
-          <img src="images/twitter_copy.png" alt="Twitter" />
-        </a>
-        <a href="https://www.linkedin.com/" target="_blank">
-          <img src="images/linkedin.png" alt="Linkedin" />
-        </a>
-      </div>
-
-      <div>
-        <p>WDD231 Class Project</p>
         <p>Rodrigo Pacheco</p>
         <p>©<span id="currentYear"></span></p>
         <p id="lastModification"></p>
