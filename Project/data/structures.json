@@ -1,0 +1,19 @@
+{
+  "1": {
+    "name": "Estructura metalica Galpon grande",
+    "location": "images/estructura1.webp"
+  },
+  "2": {
+    "name": "Estructura metalica Galpon pequeño",
+    "location": "images/estructura2.webp"
+  },
+  "3": {
+    "name": "Cielo Estructurado",
+
+    "location": "images/estructura3.webp"
+  },
+  "4": {
+    "name": "Escalera Metalica",
+    "location": "images/estructura4.webp"
+  }
+}

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Work with me</title>
+    <meta name="author" content="Rodrigo Pacheco" />
+    <meta
+      name="description"
+      content="Page to promote businesses of its members"
+    />
+
+    <link rel="icon" href="../favicon.ico" />
+    <link href="styles/normalization.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/form-media-query.css" />
+    <link rel="stylesheet" href="styles/form-small-query.css" />
+    <script src="scripts/join.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Tokyo Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tombouctou.jpg/640px-Tombouctou.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://poryoculus.github.io/wdd231/chamber/directory.html"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="title">
+        <img src="images/soldador.webp" alt="Logo" />
+        <div class="text-container">
+          <span class="sub-title">Estructuras</span>
+          <span class="main-title">Sebas</span>
+        </div>
+        <a id="menu" href="#" aria-label="Open menu" onclick="myFunction()"></a>
+      </div>
+      <div class="navigation">
+        <nav>
+          <a href="index.html">Home </a>
+          <a href="gallery.html">Gallery</a>
+          <a href="form.html">Work with me</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Contact me</h1>
+      <h2>Contact me</h2>
+      <form action="thanksyou.html" method="get" class="form-example">
+        <label for="first-name">
+          First Name:
+          <input
+            type="text"
+            id="first-name"
+            name="first_name"
+            required
+            title="Enter your first name"
+            autocomplete="given-name"
+          />
+        </label>
+
+        <label for="last-name">
+          Last Name:
+          <input
+            type="text"
+            id="last-name"
+            name="last_name"
+            required
+            title="Enter your last name"
+            autocomplete="family-name"
+          />
+        </label>
+
+        <label for="email">
+          Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            title="Enter a valid email address"
+            autocomplete="email"
+            placeholder="example@domain.com"
+          />
+        </label>
+
+        <label for="phone">
+          Mobile Phone Number:
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            title="Enter your mobile phone number"
+            autocomplete="tel"
+          />
+        </label>
+
+        <label for="organization">
+          Business/Organization Name:
+          <input
+            type="text"
+            id="organization"
+            name="organization"
+            required
+            title="Enter your organization's name"
+            autocomplete="organization"
+          />
+        </label>
+
+        <label for="membership-level">
+          Membership Level:
+          <select
+            id="membership-level"
+            name="membership_level"
+            required
+            title="Select a membership level"
+          >
+            <option value="" disabled selected>
+              Select a membership level
+            </option>
+            <option value="bronze">Small Project</option>
+            <option value="silver">Medium Project</option>
+            <option value="gold">Large Project</option>
+          </select>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp" value="" />
+
+        <button id="join" type="submit">Join</button>
+      </form>
+
+      <nav class="membership-levels">
+        <div id="bronze">
+          <h2>Small Project</h2>
+          <button type="button">Learn More</button>
+        </div>
+        <div id="silver">
+          <h2>Medium Project</h2>
+          <button type="button">Learn More</button>
+        </div>
+        <div id="gold">
+          <h2>Large Project</h2>
+          <button type="button">Learn More</button>
+        </div>
+
+        <dialog id="membership-info"></dialog>
+      </nav>
+    </main>
+    <footer>
+      <div id="address">
+        <h3>Estructuras Sebas</h3>
+        <p>Pillanlelbun, Temuco</p>
+        <p>(+56) 9 8723 1514</p>
+      </div>
+      <div id="social">
+        <img src="images/youtube.png" alt="Youtube" />
+        <img src="images/twitter_copy.png" alt="Twitter" />
+        <img src="images/linkedin.png" alt="Linkedin" />
+      </div>
+
+      <div id="creation">
+        <p>Creado por Rodrigo Pacheco</p>
+        <p>©<span id="currentYear"></span></p>
+        <p id="lastModification"></p>
+      </div>
+    </footer>
+  </body>
+</html>

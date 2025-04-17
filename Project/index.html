@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Estructuras Sebas Home page</title>
+    <meta name="author" content="Rodrigo Pacheco" />
+    <meta
+      name="description"
+      content="Page to promote businesses of its members"
+    />
+
+    <link rel="icon" href="../favicon.ico" />
+    <link href="styles/normalization.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/home-media-query.css" />
+    <link rel="stylesheet" href="styles/home-small-query.css" />
+    <script src="scripts/home.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Estructuras Sebas" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tombouctou.jpg/640px-Tombouctou.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://poryoculus.github.io/wdd231/chamber/directory.html"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <img src="images/soldador.webp" alt="Logo" />
+        <div class="text-container">
+          <span class="sub-title">Estructuras</span>
+          <span class="main-title">Sebas</span>
+        </div>
+        <a id="menu" href="#" aria-label="Open menu" onclick="myFunction()"></a>
+      </div>
+      <div class="navigation">
+        <nav>
+          <a href="#">Home </a>
+          <a href="gallery.html">Gallery</a>
+          <a href="form.html">Work with me</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="first">Home Page</h1>
+      <div class="hero-container">
+        <picture class="hero">
+          <source srcset="images/hero.webp" media="(max-width: 700px)" />
+          <img src="images/hero.webp" alt="Wielder" />
+        </picture>
+        <div class="greeting">
+          <h2>Do you need a welding professional?</h2>
+        </div>
+        <div class="cta">
+          <a href="form.html">
+            <button action="form.html" type="button">Contact me</button>
+          </a>
+        </div>
+      </div>
+      <section>
+        <h2>About me</h2>
+        <div>
+          <p>I am a welder with 20 years of experience in the field.</p>
+          <p>
+            I have work in different projects, from small repairs to large
+            constructions.
+          </p>
+          <p>
+            I am passionate about my work and always strive to deliver the best
+            quality.
+          </p>
+        </div>
+        <img src="images/Mypicture.webp" alt="Sebastian Pacheco" />
+      </section>
+    </main>
+    <footer>
+      <div id="address">
+        <h3>Estructuras Sebas</h3>
+        <p>Pillanlelbun, Temuco</p>
+        <p>(+56) 9 8723 1514</p>
+      </div>
+      <div id="social">
+        <img src="images/youtube.png" alt="Youtube" />
+        <img src="images/twitter_copy.png" alt="Twitter" />
+        <img src="images/linkedin.png" alt="Linkedin" />
+      </div>
+
+      <div id="creation">
+        <p>Creado por Rodrigo Pacheco</p>
+        <p>©<span id="currentYear"></span></p>
+        <p id="lastModification"></p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@media screen and (max-width: 640px) {
+  #pictures {
+    display: grid;
+    align-items: center;
+    width: auto;
+  }
+
+  .card {
+    padding: 0 10px;
+    width: auto;
+  }
+
+  .card img {
+    width: 360px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .portrait {
+    width: 340px;
+    height: 230px;
+  }
+
+  .card:hover {
+    transform: none;
+
+    background-color: #fff;
+  }
+}

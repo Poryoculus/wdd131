@@ -1,0 +1,38 @@
+{
+    "modal": {
+      "title": "Choose Your Welding Project Size",
+      "description": "Select the option that best fits your welding project.",
+      "memberships": [
+        {
+          "name": "Small Project",
+          "description": "Ideal for basic welding jobs such as home repairs or small custom pieces.",
+          "fee": 10,
+          "features": ["Basic materials included", "1-day turnaround", "Standard welding finish"]
+        },
+        {
+          "name": "Medium Project",
+          "description": "Perfect for medium-sized tasks like gates, railings, or furniture frames.",
+          "fee": 25,
+          "features": [
+            "All Small Project benefits",
+            "Stronger materials and welding joints",
+            "Custom measurements and adjustments"
+          ]
+        },
+        {
+          "name": "Large Project",
+          "description": "Best suited for structural work such as frameworks, stairs, or commercial needs.",
+          "fee": 50,
+          "features": [
+            "All Medium Project benefits",
+            "On-site welding available",
+            "Project planning and consultation"
+          ]
+        }
+      ],
+      "buttons": {
+        "confirm": "Select Project",
+        "cancel": "Cancel"
+      }
+    }
+  }
